@@ -119,6 +119,7 @@ body {
   margin: 35px 73px;
   width: 468px;
   height: 542px;
+  border-radius: 12px;
 }
 
 .section-project {
@@ -190,7 +191,6 @@ body {
 .icon-card {
   width: 40px;
   height: 42px;
-  
 }
 .container-icon {
   display: flex;
@@ -199,7 +199,6 @@ body {
   justify-content: center;
   margin-top: 15px;
   margin-bottom: 12px;
- 
 }
 .card-1 {
   display: flex;
@@ -228,4 +227,121 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+}
+
+.container-icon-livro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  margin-bottom: 80px;
+}
+.card-livro-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 456px;
+  height: 862px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #fcb971;
+}
+.card-livro-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 456px;
+  height: 862px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #a5cfc9;
+}
+.img-livro {
+  width: 237px;
+  height: 302px;
+  border-radius: 12px;
+}
+.container-img-livro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container-sinopse {
+  padding: 20px;
+  width: 415px;
+  height: 183px;
+  margin-bottom: 35px;
+}
+.sinopse-livro {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+}
+.button-livro {
+  padding: 12px;
+  width: 106px;
+  padding: 12px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #66a79f;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  margin-top: 90px;
+}
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon-contact {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 70px;
+  background-color: #dd8700;
+  padding: 20px;
+}
+.container-titler-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 317px;
+  height: 44px;
+  margin-left: 45px;
+}
+.title-footer {
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+h5{
+    font-size: 12px;
+    color: #fefefe;
+    font-weight: 200;
 }
