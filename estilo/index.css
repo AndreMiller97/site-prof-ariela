@@ -22,6 +22,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 139px;
 }
 .logo {
   margin-left: 185px;
@@ -33,14 +34,89 @@ body {
   height: 130px;
 }
 .container-button {
+  width: 786px;
+  height: 80px;
   margin-top: 50px;
   margin-right: 140px;
   margin-left: 365px;
-
 }
 .button-header {
   width: 139px;
   height: 50px;
   padding: 12px;
-  margin: 19px ;
+  margin-right: 12px;
+  background-color: #dd8700;
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: center;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.button-header:hover {
+  background-color: #337d76;
+}
+
+.container-headline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
+.container-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 163px;
+}
+.container-headline-title {
+  width: 468px;
+  height: 290px;
+  margin-bottom: 35px;
+}
+
+.headline-title {
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+}
+.container-headline-subtitle {
+  width: 456px;
+  height: 135px;
+  margin-bottom: 35px;
+}
+.headline-subtitle {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.container-headline-icons {
+  width: 456px;
+  height: 55px;
+}
+
+.icons-headline {
+  width: 42px;
+  height: 49px;
+}
+.link-headline {
+  margin-right: 30px;
+}
+.img-headline {
+  width: 614px;
+  height: 614px;
+  background-color: #A5CFC9;
+  border-radius: 12px;
+  margin-right: 158px;
+}
+.img-profile{
+   margin: 35px 73px;
+    width: 468px;
+    height: 542px; 
+
 }
