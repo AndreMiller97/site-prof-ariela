@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../estilo/index.css" />
+    <script src="../funções-basicas/index.js"></script>
     <link rel="stylesheet" href="../estilo/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +16,7 @@
   </head>
   <body>
     <main class="container">
-      <header class="container-header">
+      <header id="home" class="container-header">
         <div class="logo">
           <img
             class="img-logo"
@@ -25,18 +26,18 @@
           />
         </div>
         <div class="container-button">
-          <button class="button-header">HOME</button>
-          <button class="button-header">PROJETOS</button>
-          <button class="button-header">FORMAÇÃO</button>
-          <button class="button-header">LIVROS</button>
-          <button class="button-header">CONTATO</button>
+          <button onclick="onClickScrollTo('home')" class="button-header">HOME</button>
+          <button onclick="onClickScrollTo('projeto')"  class="button-header">PROJETOS</button>
+          <button onclick="onClickScrollTo('formation')"  class="button-header">FORMAÇÃO</button>
+          <button onclick="onClickScrollTo('livro')"  class="button-header">LIVROS</button>
+          <button onclick="onClickScrollTo('contact')"  class="button-header">CONTATO</button>
         </div>
       </header>
       <section class="container-headline">
         <div class="container-titles">
         <div class="container-headline-title">
           <h1 class="headline-title">
-            Olá, muito prazer me chamo Ariela e sou especialista em educação
+            Olá, muito prazer me chamo Ariela e sou professora com foco em educação infantil e
             especial.
           </h1>
           </div>
@@ -50,12 +51,17 @@
             </h2>
           </div>
           <div class="container-headline-icons">
-            <a class="link-headline" href=""><img class="icons-headline" src="../icon-svg/email.svg" alt="email" /></a>
-            <a class="link-headline" href=""><img class="icons-headline" src="../icon-svg/whatsapp.svg" alt="email" /></a>
-            <a class="link-headline" href=""><img class="icons-headline" src="../icon-svg/facebook.svg" alt="email" /></a>
-            <a class="link-headline" href=""><img class="icons-headline" src="../icon-svg/instagram.svg" alt="email" /></a>
-            <a class="link-headline" href=""><img class="icons-headline" src="../icon-svg/tik-tok.svg" alt="email" /></a>
-            <a class="link-headline" href=""><img class="icons-headline" src="../icon-svg/youtube.svg" alt="email" /></a>
+            <a class="link-headline" href="mailto:ariela.melo@hotmail.com"><img class="icons-headline" src="../icon-svg/email.svg" alt="email"  /></a>
+
+            <a class="link-headline" href="https://wa.me/5513996443186" target="_blank"><img class="icons-headline" src="../icon-svg/whatsapp.svg" alt="whatsapp" /></a>
+
+            <a class="link-headline" href="https://www.facebook.com/ariela.souza.161" target="_blank"><img class="icons-headline" src="../icon-svg/facebook.svg" alt="facebook" /></a>
+
+            <a class="link-headline" href="https://instagram.com/arielasouza16?igshid=MzRlODBiNWFlZA==" target="_blank"><img class="icons-headline" src="../icon-svg/instagram.svg" alt="instagram" /></a>
+
+            <a class="link-headline" href="https://www.tiktok.com/@arielasouza1 " target="_blank"><img class="icons-headline"  src="../icon-svg/tik-tok.svg" alt="tik-tok" /></a>
+
+            <a class="link-headline" href="https://www.youtube.com/@arielasouza2123" target="_blank"><img class="icons-headline"  src="../icon-svg/youtube.svg" alt="youtube" /></a>
           </div>
         </div>
     </div>
@@ -63,7 +69,7 @@
           <img class="img-profile" src="../img/image.jpg" alt="imagem-professora-ariela" />
         </div>
       </section>
-      <section class="section-project">
+      <section id="projeto" class="section-project">
         <h1 class="title-section">Projetos que participei</h1>
         <div class="container-project">
           <div class="container-icon">
@@ -86,7 +92,7 @@
           </div>
         </div>
       </section>
-      <section class="container-formation" >
+      <section id="formation" class="container-formation" >
         <div class="container-title"><h1 class="title-section">Formações que possuo</h1></div>
         
         <div class="card-container">
@@ -135,7 +141,7 @@
         </div>
     </div>
       </section>
-      <section class="container-livro">
+      <section id="livro" class="container-livro">
         <div class="container-title"><h1 class="title-section">Livros que Indico</h1>
     </div>
         <div class="card-container">
@@ -157,7 +163,7 @@
               vão se tornando mais complicadas e muitas vezes "científicas".
             </h3>
           </div>
-          <button class="button-livro">COMPRAR</button>
+          <button onclick="exibeAlert()" class="button-livro">COMPRAR</button>
         </div>
         <div class="card-livro-2">
             <div class="container-icon-livro">
@@ -171,7 +177,7 @@
                 Qual é a árvore mais alta do mundo?Desde quando existem as árvores e quanto tempo elas vivem?Existe um hotel construído em uma árvore? E o que podemos fazer para ter certeza de que as árvores sobreviverão para o futuro?Este livro enciclopédico responde a todas essas questões – e a muitas outras – de maneira leve e perspicaz.Piotr Socha perfaz a história das árvores desde os tempos antigos até os dias de hoje, examinando, ao longo do percurso, o papel que as árvores tiveram na história, na mitologia e em todo o mundo natural.
               </h3>
             </div>
-            <button class="button-livro">COMPRAR</button>
+            <button onclick="exibeAlert()" class="button-livro">COMPRAR</button>
           </div>
           <div class="card-livro-1">
             <div class="container-icon-livro">
@@ -185,21 +191,21 @@
                 O que fazer quando não se consegue dormir? Essas três histórias, sussurradas por Mamãe Ursa, ajudam as crianças pequenas a prolongar o instante mágico antes do sono. A floresta se prepara para dormir. A guardiã da noite avisa a todas as criaturas que “já está na hora”. Mesmo assim, nem todos conseguem pegar no sono…
               </h3>
             </div>
-            <button class="button-livro">COMPRAR</button>
+            <button onclick="exibeAlert()"  value="alert" class="button-livro">COMPRAR</button>
             
           </div>
     </div>
        
       </section>
-      <section class="container-contact">
+      <section id="contact" class="container-contact">
         <div class="container-title"><h1 class="title-section">Como posso ajudar ?</h1></div>
         <div class="contact">
           <img class="icon-contact" src="../icon-svg/email.svg" alt="email" />
-          <a href="">ariela.melo@hotmail.com</a>
+          <a href="mailto:ariela.melo@hotmail.com">ariela.melo@hotmail.com</a>
         </div>
         <div class="contact">
           <img class="icon-contact" src="../icon-svg/whatsapp.svg" alt="email" />
-          <a href="" >(13) 99999-9999</a>
+          <a href="https://wa.me/5513996443186" >(13) 13996443186</a>
         </div>
       </section>
       <footer>
@@ -208,12 +214,12 @@
         </div>
         <h5>&copy;André Miller</h5>
             <div class="container-headline-icons">
-                <a class="link-headline" href=""><img class="icons-headline" src="../icon-svg/email.svg" alt="email" /></a>
-                <a class="link-headline" href=""><img class="icons-headline" src="../icon-svg/whatsapp.svg" alt="email" /></a>
-                <a class="link-headline" href=""><img class="icons-headline" src="../icon-svg/facebook.svg" alt="email" /></a>
-                <a class="link-headline" href=""><img class="icons-headline" src="../icon-svg/instagram.svg" alt="email" /></a>
-                <a class="link-headline" href=""><img class="icons-headline" src="../icon-svg/tik-tok.svg" alt="email" /></a>
-                <a class="link-headline" href=""><img class="icons-headline" src="../icon-svg/youtube.svg" alt="email" /></a>
+                <a class="link-headline" href="mailto:ariela.melo@hotmail.com"><img class="icons-headline" src="../icon-svg/email.svg" alt="email"  /></a>
+                <a class="link-headline" href="https://wa.me/5513996443186" target="_blank"><img class="icons-headline" src="../icon-svg/whatsapp.svg" alt="whatsapp" /></a>
+                <a class="link-headline" href="https://www.facebook.com/ariela.souza.161" target="_blank"><img class="icons-headline" src="../icon-svg/facebook.svg" alt="facebook" /></a>
+                <a class="link-headline" href="https://instagram.com/arielasouza16?igshid=MzRlODBiNWFlZA==" target="_blank"><img class="icons-headline" src="../icon-svg/instagram.svg" alt="instagram" /></a>
+                <a class="link-headline" href="https://www.tiktok.com/@arielasouza1" target="_blank"><img class="icons-headline" src="../icon-svg/tik-tok.svg" alt="tik-tok" /></a>
+                <a class="link-headline" href="https://www.youtube.com/@arielasouza2123" target="_blank"><img class="icons-headline" src="../icon-svg/youtube.svg" alt="youtube" /></a>
               </div>
         
       </footer>

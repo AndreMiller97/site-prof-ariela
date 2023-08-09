@@ -178,7 +178,7 @@
   }
   .img-livro {
     width: 50vw;
-    height: 30vh;
+    height: 40vh;
     margin-left: 5px;
   }
   .container-sinopse {
@@ -210,7 +210,6 @@ footer{
   height: 10vh;
   margin:0px;
   margin-bottom: 10px;
-  margin-top: 10px;
 }
 .title-footer {
   color: #ffffff;
