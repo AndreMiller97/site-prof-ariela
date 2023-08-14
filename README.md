@@ -8,11 +8,13 @@ This is a website I developed for my wife. A landing page website so she can sho
 
  # link
 
- link - https://andremiller97.github.io/site-prof-ariela/
+  https://andremiller97.github.io/site-prof-ariela/
 
  # clone the project
-
+```
  git clone https://github.com/AndreMiller97/site-prof-ariela
+```
+ 
 
 ## Main concepts applied
 
